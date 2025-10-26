@@ -1,4 +1,6 @@
-cmake_minimum_required(VERSION 3.0)
+# Quick fix for modern CMake and w*ndows
+cmake_minimum_required(VERSION 3.24)
+set(CMAKE_SYSTEM_NAME Generic)
 
 # Disable compiler checking
 # Otherwise it will fall with `reference to _exit() not found` error
